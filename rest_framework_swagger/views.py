@@ -22,7 +22,7 @@ def get_swagger_view(title=None, url=None, patterns=None, urlconf=None):
             renderers.SwaggerUIRenderer
         ]
 
-        def get(self, request, schama=None):
+        def get(self, request, tenant=None):
             generator = SchemaGenerator(
                 title=title,
                 url=url,
